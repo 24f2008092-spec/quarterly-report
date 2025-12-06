@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Financial Quarterly Report</title>
+
+  <!-- RevealJS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+
+  <!-- Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+</head>
+
+<body>
+<div class="reveal">
+  <div class="slides">
+
+    <!-- SLIDE 1 -->
+    <section>
+      <h2>Quarterly Earnings Report</h2>
+      <p>Prepared by: Financial Technology Consultant</p>
+      <p>Email: <b>24f2008092@ds.study.iitm.ac.in</b></p>
+      <aside class="notes">
+        Introduce yourself and the objective of the report.
+      </aside>
+    </section>
+
+    <!-- SLIDE 2 (Markdown) -->
+    <section data-markdown>
+      <textarea data-template>
+## Highlights (Markdown Slide)
+
+- Revenue ↑ by 18%
+- Client Retention 95%
+- 2 New Partnerships
+- Risk exposure decreased
+
+Note: This slide is written entirely in **Markdown**.
+      </textarea>
+      <aside class="notes">
+        Discuss each highlight with an example.
+      </aside>
+    </section>
+
+    <!-- SLIDE 3 (Fragments) -->
+    <section>
+      <h2>Key Drivers of Revenue</h2>
+      <ul>
+        <li class="fragment">Increase in Trading Volume</li>
+        <li class="fragment">Strong Retail Demand</li>
+        <li class="fragment fade-up">Improved Risk Management</li>
+      </ul>
+      <aside class="notes">
+        Present bullet points one by one using fragments.
+      </aside>
+    </section>
+
+    <!-- SLIDE 4 (Code) -->
+    <section>
+      <h2>Data Processing Example (Python)</h2>
+      <pre><code class="python" data-line-numbers>
+import pandas as pd
+
+df = pd.read_csv("revenue.csv")
+quarterly = df.groupby("Quarter")["Revenue"].sum()
+print(quarterly)
+      </code></pre>
+      <aside class="notes">
+        Demonstrate data aggregation used in reporting.
+      </aside>
+    </section>
+
+    <!-- SLIDE 5 (Math Formula) -->
+    <section>
+      <h2>Financial Formula</h2>
+      <p>
+      \[
+      ROI = \frac{Net \ Profit}{Total \ Investment} \times 100
+      \]
+      </p>
+      <aside class="notes">
+        Explain ROI calculation options and benchmarks.
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<script>
+  Reveal.initialize({
+    plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
+  });
+</script>
+
+</body>
+</html>
