@@ -4,9 +4,11 @@
   <meta charset="utf-8" />
   <title>Quarterly Earnings Report</title>
 
-  <!-- RevealJS CDN -->
+  <!-- RevealJS core -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+
+  <!-- RevealJS JS -->
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
 
   <!-- Plugins -->
@@ -19,73 +21,67 @@
 <div class="reveal">
   <div class="slides">
 
-    <!-- SLIDE 1 -->
+    <!-- SLIDE 1: HTML CONTENT -->
     <section>
       <h2>Quarterly Earnings Report</h2>
-      <p>Prepared By: Technical Consultant</p>
-      <p>Email: <b>24f2008092@ds.study.iitm.ac.in</b></p>
+      <p>Presented by: Technical Consultant</p>
+      <p><b>Email: 24f2008092@ds.study.iitm.ac.in</b></p>
       <aside class="notes">
-        Welcome everyone. I will walk through the financial report with interactive visuals.
+        Start with introduction and summary of report.
       </aside>
     </section>
 
-    <!-- SLIDE 2 (Markdown) -->
+    <!-- SLIDE 2: MARKDOWN -->
     <section data-markdown>
       <textarea data-template>
-## Quarterly Highlights (Markdown)
+## Quarterly Highlights (Markdown Slide)
 
-- 📈 Revenue Growth: 18%
-- 🧾 Improved Compliance
-- 💼 New Client Acquisitions
-- 🔄 Lower Risk Exposure
-
-This slide is written entirely in **Markdown**.
+- 📈 Revenue increased 18%
+- 💼 New corporate partnerships
+- ♻️ Reduced risk exposure
+- 📊 Higher analyst rating
       </textarea>
       <aside class="notes">
-        Discuss revenue, risk, clients briefly.
+        Explain each bullet point briefly.
       </aside>
     </section>
 
-    <!-- SLIDE 3 (Fragments) -->
+    <!-- SLIDE 3: FRAGMENTS -->
     <section>
       <h2>Revenue Drivers</h2>
       <ul>
-        <li class="fragment">Retail Trading Volume Increased</li>
-        <li class="fragment">Investment Advisory Growth</li>
-        <li class="fragment fade-up">Enhanced Client Retention</li>
+        <li class="fragment">Retail Trading Volume</li>
+        <li class="fragment">Investment Advisory</li>
+        <li class="fragment fade-up">Operational Efficiency</li>
       </ul>
       <aside class="notes">
-        Reveal one bullet at a time to maintain focus.
+        Reveal bullets one by one.
       </aside>
     </section>
 
-    <!-- SLIDE 4 (Code Example) -->
+    <!-- SLIDE 4: CODE HIGHLIGHTING -->
     <section>
       <h2>Data Processing Example (Python)</h2>
       <pre><code class="python" data-line-numbers>
 import pandas as pd
 
 df = pd.read_csv("financials.csv")
-
 summary = df.groupby("Quarter")["Revenue"].sum()
-
 print(summary)
       </code></pre>
       <aside class="notes">
-        Show how revenue is aggregated over quarters.
+        Demonstrate revenue aggregation from raw data.
       </aside>
     </section>
 
-    <!-- SLIDE 5 (Math Formula) -->
+    <!-- SLIDE 5: MATH FORMULA -->
     <section>
-      <h2>Financial Calculation</h2>
-      <p>
+      <h2>Financial Formula</h2>
       \[
-      ROI = \frac{Net \ Profit}{Total \ Investment} \times 100
+      ROI = \frac{Net\ Profit}{Total\ Investment} \times 100
       \]
-      </p>
       <aside class="notes">
-        Provide ROI benchmark comparisons.
+        Expand on calculation and benchmarks.
       </aside>
     </section>
 
@@ -94,7 +90,7 @@ print(summary)
 
 <script>
   Reveal.initialize({
-    plugins: [ RevealMarkdown, RevealHighlight, RevealMath ]
+    plugins: [RevealMarkdown, RevealHighlight, RevealMath]
   });
 </script>
 
